@@ -19,6 +19,8 @@ RUN apt-get update && \
     && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
+	
+RUN chown -R 775 /var/www/html
 
 COPY php.ini /etc/php5/apache2/php.ini
 COPY dvwa /var/www/html
